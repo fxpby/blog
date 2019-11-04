@@ -44,8 +44,8 @@ const updateBlog = (id, blogData = {}) => {
     //id 是要更新博客的 id
     // blogData是一个博客对象，包含title content属性
 
-    const title = blogData.title
-    const content = blogData.content
+    const title = blogData.title    //标题
+    const content = blogData.content    //内容
 
     const sql = `
         update blogs set title='${title}',content='${content}' where id=${id}
