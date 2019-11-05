@@ -13,6 +13,7 @@
 * 后端：进入end文件夹, npm run dev
 * 前端：进入front文件夹, http-server -p 8001 (可先全局安装http-server)
 * 配置nginx并启动
+* 访问地址：localhost:8080/index.html
 
 ```conf
 
