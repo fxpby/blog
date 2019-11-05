@@ -12,7 +12,7 @@ function exec(sql){
     const promise = new Promise((resolve, reject) => {
         con.query(sql, (err, result) => {
             if(err){
-                reject.error(err)
+                reject(err)
                 return
             }
             resolve(result)
@@ -22,5 +22,6 @@ function exec(sql){
 }
 
 module.exports = {
-    exec
+    exec,
+    escape:mysql.escape
 }
